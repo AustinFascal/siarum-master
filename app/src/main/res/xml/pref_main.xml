@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Umum">
+
+        <EditTextPreference
+            android:defaultValue="@string/default_email"
+            android:key="@string/key_email"
+            android:summary="@string/default_email"
+            android:title="@string/title_email" />
+
+        <Preference android:title="Keluar"
+            android:summary="Keluar dari akun yang Anda gunakan"
+            android:key="key_logout"/>
+
+        <Preference android:title="Hapus Akun"
+            android:key="key_delete_account"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_vibrate"
+            android:summary="@string/summary_vibrate"
+            android:title="@string/title_vibrate"
+            android:enabled="false"
+            android:checked="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version"
+            android:key="key_version"/>
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+        <!-- preference opens url in browser -->
+        <Preference
+            android:summary="@string/summary_faq"
+            android:title="@string/title_faq">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_faq" />
+        </Preference>
+
+        <Preference android:title="@string/privacy_policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_privacy" />
+        </Preference>
+
+        <Preference android:title="@string/title_terms">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_terms" />
+        </Preference>
+
+        <Preference android:title="@string/title_call_developer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_call_developer" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

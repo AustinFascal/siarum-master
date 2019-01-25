@@ -1,0 +1,26 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowLightStatusBar">true</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowLightStatusBar">true</item>
+  </style>
+
+  <style name="default_ripple_button">
+    <item name="mrl_rippleDimension">10.0dip</item>
+    <item name="mrl_rippleOverlay">true</item>
+    <item name="mrl_rippleDuration">300</item>
+    <item name="mrl_rippleFadeDuration">100</item>
+    <item name="mrl_rippleHover">true</item>
+    <item name="mrl_rippleDelayClick">true</item>
+  </style>
+</resources>

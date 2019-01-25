@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asramaum.siarum.AttendanceActivity">
+  <RelativeLayout
+      android:orientation="vertical"
+      android:fitsSystemWindows="true"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/relativeLayout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+      <ImageView
+          android:id="@+id/activity_image"
+          android:layout_width="90.0dip"
+          android:layout_height="90.0dip"
+          android:layout_gravity="left"
+          android:layout_marginLeft="25dip"
+          android:layout_marginTop="30.0dip"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/activity_title"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="25.0dip"
+          android:layout_marginLeft="25.0dip"
+          android:layout_marginRight="25.0dip"
+          android:layout_marginTop="20.0dip"
+          android:text="Kajian Studi Ilmiah"
+          android:textColor="@color/colorAccent"
+          android:textSize="30.0sp" />
+
+      <TextView
+          android:id="@+id/textDescription"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="25.0dip"
+          android:layout_marginRight="25.0dip"
+          android:layout_marginTop="10.0dip"
+          android:text="Klik tombol 'Scan Sekarang' di bawah ini untuk mulai memindai QR code pada KTA. Untuk melihat data, klik tombol 'Lihat Data Kehadiran'."
+          android:textColor="@color/colorAccent"
+          android:textSize="14.0sp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/scanButtonWrapper"
+            style="@style/default_ripple_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dip"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="25.0dip"
+            android:layout_marginTop="25.0dip"
+            app:mrl_rippleColor="@color/Color_LightGrey">
+
+          <Button
+              android:id="@+id/scan_btn"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/rounded_bg"
+              android:text="SCAN SEKARANG"
+              android:textAllCaps="true"
+              android:textColor="@color/colorAccent"
+              android:textStyle="bold" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:mrl_rippleColor="@color/colorPrimaryDark"
+        app:mrl_rippleBackground="#ffffffff"
+        style="@style/default_ripple_button">
+
+      <Button
+          android:id="@+id/view_data_btn"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:background="@color/colorAccent"
+          android:padding="10.0dip"
+          android:text="LIHAT DATA KEHADIRAN"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="15.0sp" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+  </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="SCAN"-->
+    <!--android:id="@+id/scan_btn"-->
+    <!--android:layout_below="@+id/textView"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="80dp" />-->
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+  <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+  <!--xmlns:tools="http://schemas.android.com/tools"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="match_parent"-->
+  <!--android:orientation="vertical"-->
+  <!--tools:conteDetailActivityvity">-->
+
+  <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--android:minHeight="?attr/actionBarSize"-->
+    <!--android:theme="?attr/actionBarTheme"-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--app:theme="@style/ThemeOverlay.AppCompat.Dark" />-->
+
+  <!--<ImageView-->
+    <!--android:id="@+id/ivImage"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:src="@drawable/rose" />-->
+
+  <!--<TextView-->
+    <!--android:id="@+id/tvDescription"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="TextView"-->
+    <!--android:textSize="18sp" />-->
+<!--</LinearLayout>-->

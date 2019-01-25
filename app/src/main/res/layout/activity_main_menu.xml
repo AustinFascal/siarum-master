@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+        <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/transitions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_gravity="left"
+                android:layout_marginTop="100dip"
+                android:scaleType="fitCenter"
+
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="@string/welcome"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="30.0sp" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25.0dip"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/app_desc"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="20dip"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="4dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:mrl_rippleAlpha="0.1"
+                    card_view:mrl_rippleColor="#424242"
+                    card_view:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_marginRight="20dip"
+                            android:src="@drawable/mainmenu1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_vertical"
+                            android:text="Kehadiran"
+                            android:textAlignment="center"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dip"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="4dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:mrl_rippleAlpha="0.1"
+                    card_view:mrl_rippleColor="#424242"
+                    card_view:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_marginRight="20dip"
+                            android:src="@drawable/mainmenu2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_vertical"
+                            android:text="Jadwal Kegiatan Asrama"
+                            android:textAlignment="center"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dip"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="4dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:mrl_rippleAlpha="0.1"
+                    card_view:mrl_rippleColor="#424242"
+                    card_view:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_marginRight="20dip"
+                            android:src="@drawable/mainmenu3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_vertical"
+                            android:text="Berita Terkini"
+                            android:textAlignment="center"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dip"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="4dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:mrl_rippleAlpha="0.1"
+                    card_view:mrl_rippleColor="#424242"
+                    card_view:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_marginRight="20dip"
+                            android:src="@drawable/mainmenu4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_vertical"
+                            android:text="E-Mart"
+                            android:textAlignment="center"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dip"
+                card_view:cardBackgroundColor="#fafafa"
+                card_view:cardCornerRadius="4dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:mrl_rippleAlpha="0.1"
+                    card_view:mrl_rippleColor="#424242"
+                    card_view:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15sp">
+
+                        <ImageView
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_marginRight="20dip"
+                            android:src="@drawable/mainmenu5" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_vertical"
+                            android:text="Pendaftaran PRTA"
+                            android:textAlignment="center"
+                            android:textColor="#424242"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/btnGuide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:mrl_rippleColor="#ffff"
+        app:mrl_rippleBackground="@color/colorPrimary"
+        style="@style/default_ripple_button">
+        <Button
+            android:drawableLeft="@drawable/ic_info_black_24dp"
+            android:drawableTint="@color/Color_White"
+            android:drawablePadding="10dp"
+            android:id="@+id/btn_view"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:padding="10.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:paddingStart="20.0dip"
+            android:text="LIHAT PANDUAN"
+            android:textAlignment="textStart"
+            android:textColor="#fff"
+            android:textSize="15.0sp" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="40dp"
+        android:padding="6dp"
+        android:background="@drawable/circle_white_border"
+        android:id="@+id/linearLayout">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/cardview_light_background"
+            app:fabSize="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

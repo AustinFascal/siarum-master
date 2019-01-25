@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+    android:background="#fff">
+
+  <com.balysv.materialripple.MaterialRippleLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:mrl_rippleColor="#cfd8dc"
+      app:mrl_rippleBackground="@color/colorPrimary"
+      style="@style/default_ripple_button">
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:layout_margin="7dip"
+      app:cardElevation="3dp"
+      app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/ivImage"
+          android:layout_width="match_parent"
+          android:layout_height="120dip"
+          android:adjustViewBounds="false"
+          android:background="@color/finestWhite"
+          android:cropToPadding="false"
+          android:scaleType="centerCrop"
+          android:src="@drawable/menu_bg1" />
+
+      <TextView
+          android:fontFamily="@font/google_sans_regular"
+          android:id="@+id/tvTitle"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:padding="10dip"
+          android:text="TextView"
+          android:textSize="16sp" />
+    </LinearLayout>
+
+  </android.support.v7.widget.CardView>
+  </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>
+

@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">SIARUM</string>
+    <string name="welcome">Selamat datang di \nSIARUM</string>
+    <string name="app_desc">Aplikasi sistem informasi khusus untuk Asrama Mahasiswa Universitas Negeri Malang.</string>
+
+    <!--This is menu part, also used for intent-->
+    <string name="menuTitleTxt1L">Kajian Studi Ilmiah (PA)</string>
+    <string name="menuTitleTxt2L">Keterampilan (PA)</string>
+    <string name="menuTitleTxt3L">Open Forum (PA)</string>
+    <string name="menuTitleTxt4L">Senam (PA)</string>
+    <string name="menuTitleTxt5L">Bersih Toilet (PA)</string>
+    <string name="menuTitleTxt6L">Kerja Bakti (PA)</string>
+    <string name="menuTitleTxt7L">Pembacaan Surat Al-Kahfi dan Yasin (PA)</string>
+    <string name="menuTitleTxt8L">Kajian Islam (PA)</string>
+    <string name="menuTitleTxt9L">Maulid Diba\' (PA)</string>
+    <string name="menuTitleTxt10L">Kegiatan Insidental (PA)</string>
+    <string name="menuTitleTxt11L">Lainnya (PA)</string>
+
+    <string name="menuTitleTxt1P">Kajian Studi Ilmiah (PI)</string>
+    <string name="menuTitleTxt2P">Keterampilan (PI)</string>
+    <string name="menuTitleTxt3P">Open Forum (PI)</string>
+    <string name="menuTitleTxt4P">Senam (PI)</string>
+    <string name="menuTitleTxt5P">Bersih Toilet (PI)</string>
+    <string name="menuTitleTxt6P">Kerja Bakti (PI)</string>
+    <string name="menuTitleTxt7P">Pembacaan Surat Al-Kahfi dan Yasin (PI)</string>
+    <string name="menuTitleTxt8P">Kajian Islam (PI)</string>
+    <string name="menuTitleTxt9P">Maulid Diba\' (PI)</string>
+    <string name="menuTitleTxt10P">Kegiatan Insidental (PI)</string>
+    <string name="menuTitleTxt11P">Lainnya (PI)</string>
+
+    <string name="menuTitleImg1">menu1</string>
+    <string name="menuTitleImg2">menu2</string>
+    <string name="menuTitleImg3">menu3</string>
+    <string name="menuTitleImg4">menu4</string>
+    <string name="menuTitleImg5">menu5</string>
+    <string name="menuTitleImg6">menu6</string>
+    <string name="menuTitleImg7">menu7</string>
+    <string name="menuTitleImg8">menu8</string>
+    <string name="menuTitleImg9">menu9</string>
+    <string name="menuTitleImg10">menu10</string>
+    <string name="menuTitleImg11">menu11</string>
+
+    <!--<string name="sheetLink1L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTU3MTY2NDE1MyZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink2L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTUyMzg4NjIzMiZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink3L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTE3NjUzMjEyMyZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink4L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTczNzEwMDE2NyZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink5L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTAyNjY0Mjc4NCZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink6L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTk2NTcyNTUwNCZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink7L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9OTExMzU4MzczJnNpbmdsZT10cnVlJndpZGdldD1mYWxzZSZjaHJvbWU9ZmFsc2U=</string>
+    <string name="sheetLink8L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTgyOTM1NjkwNiZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink9L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MTQ4MDE3MDExMiZzaW5nbGU9dHJ1ZSZ3aWRnZXQ9ZmFsc2UmY2hyb21lPWZhbHNl</string>
+    <string name="sheetLink10L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9NTgwNzM0NTU0JnNpbmdsZT10cnVlJndpZGdldD1mYWxzZSZjaHJvbWU9ZmFsc2U=</string>
+    <string name="sheetLink11L">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL3UvMS9kL2UvMlBBQ1gtMXZUQTdpSm92cDVKZ25yX19rbkNMV2hqVTRkMW4zYnVvMFBJbFpVQ2toc3hieXlHMWhZVHRTMjJIVWpnejF1Y3E2WDQ2QXNFSHhDV3ZUbUQvcHViaHRtbD9naWQ9MjY3ODMwOTAyJnNpbmdsZT10cnVlJndpZGdldD1mYWxzZSZjaHJvbWU9ZmFsc2U=</string>
+-->
+    <string name="sheetLink1LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTI1OTM0MjI0OSZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink2LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9Mjk3MjI3NjI1JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink3LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTQzMDMzOTA1MyZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink4LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9OTYzNjk0OTAzJmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink5LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9Mzc4MzI1OTkzJmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink6LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9NjUzMzcyMTQ5JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink7LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9ODM4ODU1MTc4JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink8LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9OTc1MjI2NzQyJmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink9LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9NjExNDk1NDM4JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink10LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9Njk0ODk2OTQ3JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink11LChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9NDgyMDIwMTcmZm9ybWF0PWludGVyYWN0aXZl</string>
+
+    <string name="sheetLink1P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xNTcxNjY0MTUzJnNpbmdsZT10cnVl</string>
+    <string name="sheetLink2P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xNTIzODg2MjMyJnNpbmdsZT10cnVl</string>
+    <string name="sheetLink3P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xMTc2NTMyMTIzJnNpbmdsZT10cnVl</string>
+    <string name="sheetLink4P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xNzM3MTAwMTY3JnNpbmdsZT10cnVl</string>
+    <string name="sheetLink5P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xMDI2NjQyNzg0JnNpbmdsZT10cnVl</string>
+    <string name="sheetLink6P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xOTY1NzI1NTA0JnNpbmdsZT10cnVl</string>
+    <string name="sheetLink7P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD05MTEzNTgzNzMmc2luZ2xlPXRydWU=</string>
+    <string name="sheetLink8P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xODI5MzU2OTA2JnNpbmdsZT10cnVl</string>
+    <string name="sheetLink9P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xNDgwMTcwMTEyJnNpbmdsZT10cnVl</string>
+    <string name="sheetLink10P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD01ODA3MzQ1NTQmc2luZ2xlPXRydWU=</string>
+    <string name="sheetLink11P">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlF0OHVQZnpoRjYzTTN5NmRhVjNYcjd3ZUpqZjN4TjBvWEkwU0hIcjFiWElyejVHS2JTWnBwR1BTRUx2eGUtQ3VmYnZwbXlQb2JJQXMwdC9wdWJodG1sP2dpZD0xODU2OTQ1Njc0JnNpbmdsZT10cnVl</string>
+
+    <string name="sheetLink1PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9ODE3MjUwMDQ1JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+    <string name="sheetLink2PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTkzNjI5Mjk4OCZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink3PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTg0OTE2MDIzNCZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink4PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9NzM1MzQ0NzgmZm9ybWF0PWludGVyYWN0aXZl</string>
+    <string name="sheetLink5PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTc2MzQyNTI3MyZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink6PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTcyMDA0ODI2OSZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink7PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MjAxNzc1MDYyMyZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink8PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTQ1NDQ3OTY5MyZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink9PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9Nzg3MDYxNDcmZm9ybWF0PWludGVyYWN0aXZl</string>
+    <string name="sheetLink10PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9MTYyNzkzOTcwMCZmb3JtYXQ9aW50ZXJhY3RpdmU=</string>
+    <string name="sheetLink11PChart">aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJUWmwxYzdKMWVFSEpnMTNLRVUwUW1xb0xqUkFXeDVzWUEtQldKREJvYnFhT0gxVmxEb0U5UTUyeUVXMkU3TUptQlZ1cnRNRTdwMkZlai9wdWJjaGFydD9vaWQ9NTE5MTI2MjM4JmZvcm1hdD1pbnRlcmFjdGl2ZQ==</string>
+
+    <string name="astri">ASTRI</string>
+    <string name="astra">ASTRA</string>
+
+    <string name="astriWarga">ASTRI_WARGA</string>
+    <string name="astraWarga">ASTRA_WARGA</string>
+
+    <string name="textDescriptionWarga">Untuk melihat data kehadiran, klik tombol "Lihat Data Kehadiran" di bawah ini.</string>
+    <string name="textDescriptionPRTA">Klik tombol "Scan Sekarang" di bawah ini untuk mulai memindai QR code pada KTA. Untuk melihat data, klik tombol "Lihat Data Kehadiran".</string>
+
+    <string name="title_activity_settings">Pengaturan</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="turn_on_flashlight">Nyalakan Flashlight</string>
+    <string name="turn_off_flashlight">Matikan Flashlight</string>
+
+    <string name="default_email">guest@email.com</string>
+    <string name="title_email">Email</string>
+    <string name="key_email">key_email</string>
+
+    <string name="default_username">Guest</string>
+    <string name="title_auto_upload">Auto upload</string>
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="pref_title_notifications">Notifikasi</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">Tentang</string>
+    <string name="summary_about">
+        Aplikasi ini dibuat untuk memberikan kemudahan dalam berbagai hal
+        di Asrama Mahasiswa UM. Mulai dikembangkan pada tahun 2018,
+        sebagai wujud hasil program kerja Pengurus Rumah Tangga Asrama Divisi Penalaran.</string>
+    <string name="app_version">{auto_versioning}</string>
+    <string name="app_version_">1.181611.322</string>
+    <string name="summary_support">Kirimkan saran, kritik atau pertanyaan kepada kami</string>
+    <string name="title_send_feedback">Kirim Umpan Balik</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">Lihat pertanyaan yang sering diajukan</string>
+    <string name="url_faq">http://asrama.um.ac.id/faqs/</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="url_privacy">http://www.asrama.um.ac.id/privacy-policy/</string>
+    <string name="title_terms">Syarat dan Ketentuan</string>
+    <string name="url_terms">http://www.asrama.um.ac.id/terms-of-service/</string>
+    <string name="title_call_developer">Hubungi Pengembang</string>
+    <string name="url_call_developer">http://www.austinfascalweb.wordpress.com</string>
+    <string name="title_version">Versi</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_username">Nama Pengguna</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Getar</string>
+    <string name="summary_vibrate">Getar ketika selesai memindai</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+
+    <string name="prta_access_code">NTU0ZF9hdHRlbmRhbmNlX0BzcmFtYW5pYSFfQmFuZ2tpdEJpc2Eh</string>
+
+    <!-- Strings related to Settings -->
+</resources>

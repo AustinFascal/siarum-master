@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "375319621194",
+    "firebase_url": "https://attendance-b72c6.firebaseio.com",
+    "project_id": "attendance-b72c6",
+    "storage_bucket": "attendance-b72c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375319621194:android:1a8bd495c4efb1f7",
+        "android_client_info": {
+          "package_name": "com.asramaum.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375319621194-jm6h43knedkhindi96se5ebfs22mc69t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Wtqe7WUUq-s4EridkgS7Y7WaeOIrjXc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375319621194:android:dc75d5b22a1421ff",
+        "android_client_info": {
+          "package_name": "com.asramaum.siarum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375319621194-jm6h43knedkhindi96se5ebfs22mc69t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Wtqe7WUUq-s4EridkgS7Y7WaeOIrjXc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

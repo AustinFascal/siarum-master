@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'io.fabric'
+
+android {
+
+    signingConfigs {
+        config {
+            keyPassword 'Bismillah123'
+            storeFile file('E:/AndroidProject/attendance-key.jks')
+            storePassword 'Bismillah123'
+            keyAlias 'attendance-key'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId 'com.asramaum.siarum'
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionName '1.181611.322'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary =
+                true
+        versionCode 4
+        signingConfig signingConfigs.config
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            zipAlignEnabled false
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            debuggable false
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    implementation 'com.jakewharton:butterknife:8.7.0'
+    implementation 'com.klinkerapps:sliding-activity:1.5.2'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.jmedeisis:draglinearlayout:1.1.0'
+    implementation 'com.thefinestartist:finestwebview:1.2.7'
+    implementation 'com.koushikdutta.ion:ion:2.+'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'me.anwarshahriar:calligrapher:1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    implementation 'com.github.scottyab:showhidepasswordedittext:0.8'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation 'com.google.firebase:firebase-database:16.0.2'
+    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+    implementation 'com.google.firebase:firebase-perf:16.1.0'
+    implementation 'com.google.firebase:firebase-config:16.0.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.1'
+    implementation 'com.firebaseui:firebase-ui-firestore:4.1.0'
+    implementation 'android.arch.core:runtime:1.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+
+    compile 'com.google.code.gson:gson:2.8.1'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.1.0'
+            }
+        }
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
