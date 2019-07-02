@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BACKUP SIARUM.iml" filepath="$PROJECT_DIR$/BACKUP SIARUM.iml" />
-      <module fileurl="file://E:\AndroidProject\Flowers-master\Flowers.iml" filepath="E:\AndroidProject\Flowers-master\Flowers.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/siarum-master.iml" filepath="$PROJECT_DIR$/siarum-master.iml" />
     </modules>
   </component>
 </project>

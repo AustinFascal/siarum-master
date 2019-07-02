@@ -45,7 +45,43 @@
                     android:layout_height="wrap_content"
                     android:focusable="true"
                     android:focusedByDefault="true"
-                    android:hint="Masukkan nama lengkap"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/editTextNIM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusedByDefault="true"
+                    android:hint="Nomor Induk Mahasiswa"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/editTextOrigin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusedByDefault="true"
+                    android:hint="Kota Asal"
                     android:inputType="textPersonName" />
 
             </android.support.design.widget.TextInputLayout>
@@ -62,7 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:hint="Masukkan alamat email"
+                    android:hint="Alamat Email"
                     android:inputType="textEmailAddress"
                     android:textColorHint="@color/colorAccent" />
 
@@ -80,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:hint="Masukkan nomor telepon"
+                    android:hint="Nomor Telepon / HP"
                     android:inputType="phone" />
 
             </android.support.design.widget.TextInputLayout>
@@ -97,17 +133,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
-                    android:hint="Masukkan kata sandi"
+                    android:hint="Kata Sandi"
                     android:inputType="textPassword"
                     android:textColorHint="@color/colorAccent" />
 
             </android.support.design.widget.TextInputLayout>
 
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"/>
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"/>
+            </RadioGroup>
+
+
             <CheckBox
                 android:id="@+id/checkBoxAccountType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
+                android:layout_marginTop="10dip"
                 android:text="Daftar sebagai Pengurus Rumah Tangga Asrama" />
 
             <com.balysv.materialripple.MaterialRippleLayout

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageMainMenuViewPagerItem"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_menu_profit_simulation" />
+
+            <View
+                android:id="@+id/cardview_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="@drawable/healthy_gradient_item" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_farm_status"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_check_outlined"
+                    android:tint="@color/Color_White" />
+
+                <TextView
+                    android:id="@+id/titleMainMenuViewPagerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Lahan Sejahtera"
+                    android:textColor="@color/Color_White"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/descMainMenuViewPagerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleMainMenuViewPagerItem"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Lowokwaru, Malang"
+                    android:textColor="@color/Color_White"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/imageMainMenuViewPagerItem"
+                android:src="@drawable/main_menu_profit_simulation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:id="@+id/cardview_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/healthy_gradient_item" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:id="@+id/icon_farm_status"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_check_outlined"
+                    android:tint="@color/Color_White" />
+            <TextView
+                android:id="@+id/titleMainMenuViewPagerItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/Color_White"
+                android:maxLines="1"
+                android:text="Lahan Sejahtera"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/descMainMenuViewPagerItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleMainMenuViewPagerItem"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/Color_White"
+                android:maxLines="1"
+                android:drawablePadding="10dp"
+                android:textSize="13sp"
+                android:ellipsize="end"
+                android:text="Lowokwaru, Malang"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>-->
+</LinearLayout>

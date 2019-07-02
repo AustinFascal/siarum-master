@@ -14,6 +14,8 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -34,9 +36,12 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 public class UserRegister extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatButton buttonRegister, buttonSignIn;
-    private EditText editTextEmail, editTextName, editTextPhone;
+    private EditText editTextEmail, editTextName, editTextPhone, editTextNIM, editTextOrigin;
     private ShowHidePasswordEditText editTextPass;
     private CheckBox checkBoxAccountType;
+    private RadioButton radioButton;
+
+    private RadioGroup radioGroupGender;
 
     private ProgressDialog progressDialog;
 
@@ -44,8 +49,7 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
 
     FirebaseRemoteConfig mFirebaseRemoteConfig;
 
-    public String prta_pass_value;
-
+    public String prta_pass_value, genderType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +63,17 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
         buttonSignIn = (AppCompatButton) findViewById(R.id.buttonSignIn);
         buttonRegister = (AppCompatButton) findViewById(R.id.buttonRegister);
         editTextName = (EditText) findViewById(R.id.editTextName);
+        editTextNIM = (EditText) findViewById(R.id.editTextNIM);
+        editTextOrigin = (EditText) findViewById(R.id.editTextOrigin);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPhone = (EditText) findViewById(R.id.editTextPhone);
         editTextPass = (ShowHidePasswordEditText) findViewById(R.id.editTextPass);
         checkBoxAccountType = (CheckBox) findViewById(R.id.checkBoxAccountType);
+
+        /*radioButtonMale = (RadioButton) findViewById(R.id.radioButtonMale);
+        radioButtonFemale = (RadioButton) findViewById(R.id.radioButtonFemale);*/
+
+
         progressDialog = new ProgressDialog(this);
 
         mAuth = FirebaseAuth.getInstance();
@@ -77,8 +88,6 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
         progressDialog.setMessage("Mohon tunggu ... ");
         progressDialog.setCancelable(false);
         progressDialog.show();
-
-
     }
 
 
@@ -146,14 +155,25 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
 
     private void registerUser(){
         String name = editTextName.getText().toString().trim();
+        String nim = editTextNIM.getText().toString().trim();
+        String origin = editTextOrigin.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
         String phone = editTextPhone.getText().toString().trim();
         String password = editTextPass.getText().toString().trim();
-        Boolean accountType = (checkBoxAccountType.isChecked());
+        Boolean accountType = checkBoxAccountType.isChecked();
+
+        /*Boolean typeMale = radioButtonMale.isChecked();
+        Boolean typeFemale = radioButtonFemale.isChecked();*/
 
         if(name.isEmpty()){
             editTextName.setError("Masukkan nama lengkap Anda");
             editTextName.requestFocus();
+        } else if(nim.isEmpty() || nim.length()<12){
+            editTextNIM.setError("Masukkan NIM Anda dengan benar");
+            editTextNIM.requestFocus();
+        } else if(origin.isEmpty()){
+            editTextOrigin.setError("Masukkan daerah asal Anda dengan benar");
+            editTextOrigin.requestFocus();
         } else if(email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmail.setError("Masukkan alamat email Anda dengan benar");
             editTextEmail.requestFocus();
@@ -172,7 +192,16 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
             } else{
                 userWarga();
             }
+
+            radioGroupGender = (RadioGroup) findViewById(R.id.radioGroupGender);
+
+            // get selected radio button from radioGroup
+            int selectedId = radioGroupGender.getCheckedRadioButtonId();
+            radioButton = (RadioButton) findViewById(selectedId);
+
+            genderType = radioButton.getText().toString();
         }
+
     }
 
     private void userPRTA(){
@@ -202,10 +231,13 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
 
     private void userAuth(){
         final String name = editTextName.getText().toString().trim();
+        final String nim = editTextNIM.getText().toString().trim();
+        final String origin = editTextOrigin.getText().toString().trim();
         final String email = editTextEmail.getText().toString().trim();
         final String password = editTextPass.getText().toString().trim();
         final String phone = editTextPhone.getText().toString().trim();
         final Boolean accountType = checkBoxAccountType.isChecked();
+        final String genderTypePass = genderType;
 
         buttonRegister.setEnabled(false);
 
@@ -217,10 +249,7 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
                         if(task.isSuccessful()){
 
                             User user = new User(
-                                    name,
-                                    email,
-                                    phone,
-                                    accountType
+                                    name, nim, origin, email, phone, accountType, genderTypePass
                             );
 
                             FirebaseDatabase.getInstance().getReference("Users")

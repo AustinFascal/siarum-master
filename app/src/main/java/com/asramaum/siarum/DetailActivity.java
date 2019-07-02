@@ -107,77 +107,77 @@ public class DetailActivity extends SlidingActivity {
 
         dialog = new ProgressDialog(DetailActivity.this);
 
-        if (txtTitle.getText().equals("Kajian Studi Ilmiah (PA)") || txtTitle.getText().equals("Kajian Studi Ilmiah (PI)")){
+        if (txtTitle.getText().equals("Kajian Studi Ilmiah")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg1);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Keterampilan (PA)") || txtTitle.getText().equals("Keterampilan (PI)")){
+        } else if (txtTitle.getText().equals("Keterampilan")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg2);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Open Forum (PA)") || txtTitle.getText().equals("Open Forum (PI)")){
+        } else if (txtTitle.getText().equals("Open Forum")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg3);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Senam (PA)") || txtTitle.getText().equals("Senam (PI)")){
+        } else if (txtTitle.getText().equals("Senam")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg4);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Bersih Toilet (PA)") || txtTitle.getText().equals("Bersih Toilet (PI)")){
+        } else if (txtTitle.getText().equals("Bersih Toilet")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg5);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Kerja Bakti (PA)") || txtTitle.getText().equals("Kerja Bakti (PI)")){
+        } else if (txtTitle.getText().equals("Kerja Bakti")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg6);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Pembacaan Surat Al-Kahfi dan Yasin (PA)")  || txtTitle.getText().equals("Pembacaan Surat Al-Kahfi dan Yasin (PI)")){
+        } else if (txtTitle.getText().equals("Pembacaan Surat Al-Kahfi dan Yasin")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg7);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Kajian Islam (PA)") || txtTitle.getText().equals("Kajian Islam (PI)")){
+        } else if (txtTitle.getText().equals("Kajian Islam")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg8);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Maulid Diba' (PA)") || txtTitle.getText().equals("Maulid Diba'(PI)")){
+        } else if (txtTitle.getText().equals("Maulid Diba'")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg9);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Kegiatan Insidental (PA)") || txtTitle.getText().equals("Kegiatan Insidental (PI)")){
+        } else if (txtTitle.getText().equals("Kegiatan Insidental")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     setImage(R.drawable.menu_bg10);
                 }
             }, 500);
-        } else if (txtTitle.getText().equals("Lainnya (PA)") || txtTitle.getText().equals("Lainnya (PI)")){
+        } else if (txtTitle.getText().equals("Lainnya")){
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
