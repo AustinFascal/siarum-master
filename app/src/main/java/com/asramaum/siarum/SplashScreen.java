@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SplashScreen extends Activity implements Animation.AnimationListener  {
+
     Animation animFadeIn;
     LinearLayout linearLayout;
 
@@ -20,6 +21,7 @@ public class SplashScreen extends Activity implements Animation.AnimationListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splash_screen);
 
         // load the animation

@@ -46,7 +46,7 @@ dependencies {
     implementation 'com.balysv:material-ripple:1.0.2'
     implementation 'com.jmedeisis:draglinearlayout:1.1.0'
     implementation 'com.thefinestartist:finestwebview:1.2.7'
-    //implementation 'com.koushikdutta.ion:ion:2.+'
+
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'me.anwarshahriar:calligrapher:1.0'

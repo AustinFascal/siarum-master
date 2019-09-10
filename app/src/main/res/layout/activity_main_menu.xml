@@ -194,13 +194,20 @@
 
                         </LinearLayout>
 
-                        <android.support.v4.view.ViewPager
+                        <!--<android.support.v4.view.ViewPager
                             android:id="@+id/viewPagerMyFarm"
                             android:layout_width="match_parent"
                             android:layout_height="185dp"
                             android:layout_centerInParent="true"
                             android:clipToPadding="false"
                             android:foregroundGravity="center"
+                            android:overScrollMode="never" />-->
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/recyclerViewMenu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
                             android:overScrollMode="never" />
 
                         <LinearLayout

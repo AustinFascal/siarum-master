@@ -41,7 +41,7 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
     private CheckBox checkBoxAccountType;
     private RadioButton radioButton;
 
-    private RadioGroup radioGroupGender;
+    //private RadioGroup radioGroupGender;
 
     private ProgressDialog progressDialog;
 
@@ -193,13 +193,13 @@ public class UserRegister extends AppCompatActivity implements View.OnClickListe
                 userWarga();
             }
 
-            radioGroupGender = (RadioGroup) findViewById(R.id.radioGroupGender);
+            /*radioGroupGender = (RadioGroup) findViewById(R.id.radioGroupGender);
 
             // get selected radio button from radioGroup
             int selectedId = radioGroupGender.getCheckedRadioButtonId();
             radioButton = (RadioButton) findViewById(selectedId);
 
-            genderType = radioButton.getText().toString();
+            genderType = radioButton.getText().toString();*/
         }
 
     }

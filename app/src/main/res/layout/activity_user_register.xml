@@ -138,6 +138,7 @@
                     android:textColorHint="@color/colorAccent" />
 
             </android.support.design.widget.TextInputLayout>
+<!--
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -160,6 +161,7 @@
                     android:layout_height="wrap_content"
                     android:text="Perempuan"/>
             </RadioGroup>
+-->
 
 
             <CheckBox

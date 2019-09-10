@@ -1,5 +1,6 @@
 package com.asramaum.siarum;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -21,8 +22,13 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SnapHelper;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
+import android.webkit.PermissionRequest;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -31,6 +37,7 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+
 import com.asramaum.siarum.adapter.MainMenuViewPagerAdapter;
 import com.asramaum.siarum.adapter.MyFarmViewPagerAdapter;
 import com.asramaum.siarum.emart.ChooseAccountMart;
@@ -50,6 +57,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 import com.visuality.f32.temperature.TemperatureUnit;
@@ -67,6 +76,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import butterknife.ButterKnife;
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class MainMenuActivity extends AppCompatActivity implements LocationListener {
@@ -76,6 +86,8 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference databaseReference;
     private String userID;
+
+    private RecyclerView recyclerView;
 
     private ProgressDialog dialog;
 
@@ -110,8 +122,6 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
     // TODO Give attribution link for OpenWeather API
     String OPEN_WEATHER_MAP_API = "868bd94de047f6ba27cef66c0704dc86";
 
-    Animation animFadeInFast;
-    LinearLayout header_part;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +139,7 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
         detailsField = findViewById(R.id.weatherDetails);
         currentTemperatureField = findViewById(R.id.currentTemp);
         weatherIcon = findViewById(R.id.currentTempIcon);
+
 
         // Getting user's location
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
@@ -385,61 +396,7 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
 
     }
 
-    protected void onPostResume() {
-        super.onPostResume();
-
-        if (userID!=null){
-            //FIREBASE REMOTE CONFIG
-            mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
-
-            mFirebaseRemoteConfig.setConfigSettings(new FirebaseRemoteConfigSettings.Builder()
-                    .setDeveloperModeEnabled(true)
-                    .build());
-            long cacheExpiration = 0;
-
-            mFirebaseRemoteConfig.fetch(cacheExpiration)
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            // Once the config is successfully fetched it must be activated before newly fetched values are returned.
-                            mFirebaseRemoteConfig.activateFetched();
-                            checkAppVersion();
-                            //getSheetLink();
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception exception) {
-                            buildDialog(MainMenuActivity.this).show();
-                        }
-                    });
-
-            // Making new model of weather manager
-            new WeatherManager(OPEN_WEATHER_MAP_API).getCurrentWeatherByCoordinates(
-                    lat,
-                    lng,
-                    new WeatherManager.CurrentWeatherHandler() {
-
-                        @Override
-                        public void onReceivedCurrentWeather(WeatherManager manager, Weather weather) {
-                            double currentTemperatureInCelcius = weather.getTemperature().getCurrent()
-                                    .getValue(TemperatureUnit.CELCIUS);
-                            currentTemperatureField.setText(String.valueOf(currentTemperatureInCelcius) + "°C");
-                        }
-
-                        @Override
-                        public void onFailedToReceiveCurrentWeather(WeatherManager manager) {
-                        }
-                    }
-            );
-
-            // Loadup latitude and latitude
-            taskLoadUp(String.valueOf(lat), String.valueOf(lng));
-            getLocation();
-        }
-
-    }
-
+/*
     // Location handler
     public void taskLoadUp(String lat, String lng) {
         if (WeatherFunction.isNetworkAvailable(getApplicationContext())) {
@@ -448,8 +405,8 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
         } else {
             Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_LONG).show();
         }
-    }
-
+    }*/
+/*
     void getLocation() {
         try {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -457,7 +414,7 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
         } catch (SecurityException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     @Override
     public void onLocationChanged(Location location) {
@@ -585,14 +542,14 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
             }
         }
     }
-
+/*
     private void checkAppVersion() {
         appVersionValue = mFirebaseRemoteConfig.getString("appVersionValue");
         newAppDownloadLink = mFirebaseRemoteConfig.getString("newAppDownloadLink");
         if (!appVersionValue.equals(getString(R.string.app_version_))){
             updateAppForce(MainMenuActivity.this).show();
         }
-    }
+    }*/
 
     public AlertDialog.Builder updateAppForce (Context c) {
         AlertDialog.Builder builder = new AlertDialog.Builder(c);
@@ -651,10 +608,13 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
     }
 
     private void getSheetLink() {
+
+
+
         //Bundle bundleAccount = getIntent().getExtras();
         //final String accountState = bundleAccount.getString("state");
 
-        viewPagerMyFarm = findViewById(R.id.viewPagerMyFarm);
+        /*viewPagerMyFarm = findViewById(R.id.viewPagerMyFarm);
         viewPagerMyFarm.setAdapter(adapterViewPagerMyFarm);
         viewPagerMyFarm.setPadding(20, 0, 555, 0);
         viewPagerMyFarm.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -692,7 +652,7 @@ public class MainMenuActivity extends AppCompatActivity implements LocationListe
             public void onPageScrollStateChanged(int state) {
 
             }
-        });
+        });*/
 
         /*if (accountState.equals("ASTRA")){
             // View pager menu for my farm
